@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title>My PhD Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <h1>My Name</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section id="hero">
-        <h1>Welcome to my website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="#" class="btn">Learn More</a>
-      </section>
       <section id="about">
-        <h2>About Me</h2>
-  <p>Hello, my name is Muhammad Shaheer and I am a Doctoral Researcher at University of Luxembourg. My research intrests are Robotics, SLAM, and Situational Awareness. My website is a platform to showcase my work, share my knowledge and connect with others in the industry.</p>
-</section>
-      <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
-        </ul>
-      </section>
-      <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="card">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, arcu euismod commodo congue, augue erat tincidunt quam, in aliquam nibh nibh eget massa.</p>
-          <p>- John Doe</p>
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="profile-picture">
+            <img src="0.jpg" alt="My Profile Picture">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
         </div>
       </section>
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <section id="research">
+        <div class="container">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Research topic 1</li>
+            <li>Research topic 2</li>
+            <li>Research topic 3</li>
+          </ul>
+        </div>
       </section>
-    </main>
-   
+      <section id="publications">
+        <div class="container">
+          <h2>
