@@ -70,3 +70,7 @@ function togglePublication(event) {
         publicationContent.style.maxHeight = publicationContent.scrollHeight + "px";
     }
 }
+particlesJS.load('particles-js', 'path/to/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
