@@ -15,7 +15,7 @@
   /* Header styling */
   header {
     background-color: #333;
-    color: #fff;
+    color: #111;
     padding: 1em;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@
     margin-right: 1em;
   }
   nav a {
-    color: #fff;
+    color: #111;
     text-decoration: none;
   }
   nav a:hover {
@@ -51,7 +51,7 @@
   
   /* Section styling */
   section {
-    background-color: #fff;
+    background-color: #111;
     padding: 1em;
     margin-bottom: 1em;
     flex: 1;
@@ -67,7 +67,7 @@
   }
   .btn {
     background-color: #333;
-    color: #fff;
+    color: #111;
     padding: 0.5em 1em;
     border: none;
     text-decoration: none;
@@ -76,7 +76,7 @@
     background-color: #555;
   }
   .card {
-    background-color: #fff;
+    background-color: #111;
     padding: 1em;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   }
