@@ -47,12 +47,12 @@ section h2 {
 
 /* About Me Section Styles */
 
-section#about-me {
+#profile-picture img {
   display: flex;
   align-items: center;
 }
 
-section#about-me img {
+#profile-picture img {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -61,7 +61,7 @@ section#about-me img {
   border-radius: 50%;
   float: left;
 }
-section#about-me img:hover {
+#profile-picture img:hover {
   width: 100px;
   height: 100px;
 }
