@@ -80,6 +80,23 @@
     padding: 1em;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   }
+  #about {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
   
   /* Media Queries */
   @media (min-width: 768px) {
