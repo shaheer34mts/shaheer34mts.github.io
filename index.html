@@ -1,50 +1,127 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Shaheer's Profile</title>
+    <title>Muhammad Shaheer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- <script src="particles.min.js"></script> -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- <canvas class="particles-js"></canvas> -->
     <header>
       <div class="container">
-        <h1>Muhammad Shaheer</h1>
         <nav>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="about.html" onclick="loadPage(this)">About</a></li>
+            <li><a href="research.html" onclick="loadPage(this)">Research</a></li>
+            <li><a href="publications.html" onclick="loadPage(this)">Publications</a></li>
+            <li><a href="teaching.html" onclick="loadPage(this)">Teaching</a></li>
+            <li><a href="cv.html" onclick="loadPage(this)">CV</a></li>
+            <li><a href="contact.html" onclick="loadPage(this)">Contact</a></li>
           </ul>
         </nav>
+        <div class="profile-picture-name">
+          <div class="profile-picture">
+            <img src="0.jpg" alt="Your Profile Picture">
+          </div></div>
+          <div class="header-title">
+            <h1>Muhammad Shaheer</h1>
+            <h2>Doctoral Candidate  @  University of Luxembourg</h2>
+          </div>
       </div>
     </header>
+    
     <main>
-      <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <div id="profile-picture">
-            <img src="0.jpg" alt="My Profile Picture">
-        </div>        
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
+      <section id="introduction">
+        <div class="container-intro">
+
+          <p>The first time I've learnt about the theory of evolution, it absolutely blew my mind and I've decided that I want to become an evolutionary biologist to understand how it works. More than a decade later, I hold a doctorate degree in Systematic Zoology and Evolution. However, now I know that I could spend a lifetime trying to understand evolution and end up with more questions than I started with. But I also know that this limitless source of curiosity is something I very much enjoy.
+
+            Broadly speaking, my research interests lie within the wide range of evolutionary history, from the origin of species' to their extinction. I am particularly interested in population dynamics and conservation genomics of extinct and endangered species, and my latest research has focused on studying genetic processes in small, fragmented, and isolated populations, using the woolly mammoth and mountain gorillas as model systems.
+            
+            I am currently a postdoc at the Bioinformatics Centre at UCPH, working with Hans Siegismund and the .</p>
         </div>
       </section>
       <section id="research">
-        <div class="container">
-          <h2>Research Interests</h2>
-          <ul>
-            <li>Robot Perception</li>
-            <li>Simultaneous Localization and Mapping (SLAM)</li>
-            <li>Situational Awareness</li>
-          </ul>
+      <div id="r1" class="container-research">
+        <h2>Research</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
+        <a href="research.html" class="read-more-button">Read More</a>
+      </div>
+      <div id="r2" class="container-research">
+        <h2>Research 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
+      </div>
+      <div id="r3" class="container-research">
+        <h2>Research 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
+      </div>
+    </section>
+
+    <section id="cv">
+      <div id="r1" class="container-cv">
+        <h2>CV</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
+        <a href="research.html" class="read-more-button">Read More</a>
+      </div>
+      <div id="work" class="container-research">
+        
+        <h2>Work</h2>
+        <!-- <img src="teacher.svg" alt="teacher"> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
+        
+      </div>
+      <div id="edu" class="container-research">
+        <h2>Education</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id tincidunt malesuada, quam augue blandit nibh, id aliquet urna velit vel augue. Nullam vel tincidunt libero. Sed viverra velit vel augue congue, id porttitor ante malesuada. Sed interdum leo at neque convallis, sit amet malesuada velit tincidunt.</p>
+        <!-- <img src="education.svg" alt="school"> -->
+      </div>
+    </section>
+
+    </main>
+    
+    <footer>
+      <div class="container">
+        <div id="social" class="socials">
+          <a href="https://github.com/shaheer34mts">
+            <img src="github.svg" alt="Github">
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-shaheer-279361121/">
+            <img src="linkedin.svg" alt="Linkedin">
+          </a>
+          <a href="https://twitter.com/mshaheerahmed">
+            <img src="twitter.svg" alt="Twitter">
+          </a>
+         
         </div>
-      </section>
-      <section id="publications">
-        <div class="container">
-          <h2>
+        <div class="copyright-div">
+          <p class="copyright-text">Copyright © 2021 Your Name</p>
+      </div>
+    </body>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+  <!-- <script src="particles.js"></script>   
+ <script src="my_particlejs.js"></script>  -->
+
+   <!-- <style> 
+    *{margin: 0; padding:0;}
+    body,html{width: 100%;height:100%;}
+    section{
+      width: 100%;
+      height: 100%;
+      background-color: rgb(245, 242, 242);
+    }
+    #particles-js{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    </style> -->
+ 

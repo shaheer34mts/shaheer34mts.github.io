@@ -1,111 +1,266 @@
-/* Base Styles */
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&display=swap');
+ header {
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* Header Styles */
-
-header {
-  background-color: #f5f5f5;
-  padding: 20px;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-header nav ul li {
-  margin-right: 20px;
-}
-
-/* Main Styles */
-
-main {
-  padding: 20px;
-}
-
-/* Section Styles */
-
-section {
-  margin-bottom: 20px;
-}
-
-section h2 {
-  margin-bottom: 10px;
-}
-
-/* About Me Section Styles */
-
-#profile-picture img {
+  position: fixed;
+  width: 100%;
+  z-index: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+.header-title {
+  text-align: center; /* aligns the text to center */
+  margin-top: 20px; /* increases the margin between the profile picture and the header-title */
 }
 
-#profile-picture img {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  float: left;
-}
-#profile-picture img:hover {
-  width: 500px;
-  height: 500px;
+.header-title h1 {
+  font-size: 36px; /* sets the font size of the h1 element to 36px */
+  font-family: 'Cinzel'; /* sets the font family for the h1 element */
+  margin: 0; /* removes the margin */
 }
 
-/* Research Section Styles */
-
-section#research .research-interests {
-  display: flex;
-  flex-wrap: wrap;
-}
-section#research .research-interests div {
-  flex: 1;
-  padding: 8px;
-  margin-bottom: 8px;
-  background-color:antiquewhite
+.header-title h2 {
+  font-size: 16px; /* sets the font size of the h2 element to 24px */
+  font-family: 'Cinzel'; /* sets the font family for the h2 element */
+  margin: 0; /* removes the margin */
+  margin-top: 10px; /* increases the margin between h1 and h2*/
+  word-spacing: 10px; /* increases the word spacing by 10px */
 }
 
-/* Publication Section Styles */
-
-section#publications ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.header.shrink {
+  background-color: #333;
+  padding: 10px 0;
 }
-
-/* Presentation Section Styles */
-
-section#presentations ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Teaching Section Styles */
-
-section#teaching ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Contact Section Styles */
-
-section#contact {
+nav {
+  margin-bottom: 1rem;
   text-align: center;
 }
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-picture-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav a {
+  font-family: 'Cinzel';
+  padding: 0.5rem 1rem; /* add space on all sides */
+}
+
+
+h1 {
+  margin-left: 1rem;
+  font-family: 'Cinzel';
+  
+}
+
+nav {
+  margin-left: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+#introduction {
+  background-color: #ffffff; /* sets background color of the section */
+  padding: 20px; /* sets padding for the section */
+  font-family: 'Cinzel';
+  text-align: center; /* centers the text inside the section */
+  margin: 20px auto; /* centers the section horizontally and sets a margin of 30px at the top and bottom */
+  margin-right: 20rem;
+  margin-left: 20rem;
+  line-height: 1.5;
+}
+
+#research {
+  background-color: #f0e7e7; /* sets background color of the section */
+  padding: 20px; /* sets padding for the section */
+  font-family: 'Cinzel';
+  text-align: center; /* centers the text inside the section */
+  
+  line-height: 1.5;
+}
+#cv {
+  background-color: #ffffff; /* sets background color of the section */
+  padding: 20px; /* sets padding for the section */
+  font-family: 'Cinzel';
+  text-align: center; /* centers the text inside the section */
+  
+  line-height: 1.5;
+}
+
+#research h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+#r1{
+  width: 33.33%;
+  float: left;
+}
+#r2{
+  width: 33.33%;
+  float: middle;
+}
+#r2{
+  width: 33.33%;
+  float: right;
+}
+
+#work{
+  width: 33.33%;
+  float: right;
+  
+}
+#edu{
+  width: 33%;
+  margin: auto;  
+}
+
+.work ::before {
+  display: inline-block;
+  background-image: url(teacher.svg); 
+}
+
+.edu ::before {
+  background-image: url(education.svg); 
+}
+
+
+.publications {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-family: 'Cinzel';
+  text-align: center; /* centers the text inside the section */
+  margin: 20px auto; /* centers the section horizontally and sets a margin of 30px at the top and bottom */
+
+}
+
+.publications h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Cinzel';
+  text-align: center; /* centers the text inside the section */
+  margin: 20px auto; /* centers the section horizontally and sets a margin of 30px at the top and bottom */
+
+  }
+  .publications h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel';
+    text-align: center; /* centers the text inside the section */
+    margin: 20px auto; /* centers the section horizontally and sets a margin of 30px at the top and bottom */
+  
+    }
+
+
+
+.socials {
+  background-color: #ffffff;
+  padding: 40px; /* sets padding for the section */
+  display: flex; /* displays the links in a row */
+  justify-content: center; /* centers the links horizontally */
+  align-items: center; /* centers the links vertically */
+}
+
+.socials a {
+  content: ""; /* clears the content */
+  display: inline-block; /* displays the icon as an inline element */
+  width: 30px; /* sets the width of the icon */
+  height: 30px; /* sets the height of the icon */
+  margin-right: 10px; /* sets a margin to the right of the icon */
+  background-size: contain; /* scales the icon to fit the size */
+}
+
+.socials a[href*="Github"]::before {
+  background-image: url(github.svg); /* sets the Github icon as the background */
+}
+
+.socials a[href*="Twitter"]::before {
+  background-image: url(twitter.svg); /* sets the Twitter icon as the background */
+}
+
+.socials a[href*="Linkedin"]::before {
+  background-image: url(linkedin.svg); /* sets the LinkedIn icon as the background */
+}
+.publications-content{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+}
+.copyright-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+.publications-year-div ul {
+  list-style-type: none; /* remove the bullets */
+}
+
+.publications-grid-container {
+  display: grid;
+  place-items: center;
+}
+.publications-year-div .year {
+  display:inline-block;
+  font-weight:bold;
+  float:left;
+}
+
+.publications-year-div ul ul {
+  text-align:left;
+}
+
+.publications-year-div {
+  width:50%; /* or any other desired width */
+  margin:auto;
+  text-align:center;
+}
+.year-bracket {
+  position: relative;
+}
+
+.year-heading:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #000;
+}
+
 
