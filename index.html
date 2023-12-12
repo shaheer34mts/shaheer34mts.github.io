@@ -53,20 +53,23 @@
               <!-- IMAGES -->
               <div class="one">
                 <div class="two" id='lerf_under'>
-                  <img src="images/bsg.png" width='180'/>
+                  <img src="images/bsg.png" width='180' id='lerf_under'/>
                 </div>
-                <img src="images/bsg.png" width='180' id='lerf_under'/>
+                <video  width=115% height=100% muted autoplay loop id="lerf_over">
+                  <source src="images/ICRA_24_better_s_graphs.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <!-- SCRIPT FOR HOVERING -->
               <script type="text/javascript">
                 function lerf_start() {
-                  document.getElementById('lerf_splash').style.opacity = "0";
-                  document.getElementById('lerf_under').style.opacity = "1";
+                  document.getElementById('lerf_under').style.opacity = "0";
+                  document.getElementById('lerf_over').style.opacity = "1";
                 }
 
                 function lerf_stop() {
-                  document.getElementById('lerf_splash').style.opacity = "1";
-                  document.getElementById('lerf_under').style.opacity = "0";
+                  document.getElementById('lerf_under').style.opacity = "1";
+                  document.getElementById('lerf_over').style.opacity = "0";
                 }
                 lerf_stop()
               </script>
